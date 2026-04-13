@@ -2,8 +2,15 @@ version: "3.8"
 
 services:
   react-app:
+<<<<<<< HEAD
     build: .
     ports:
       - "80:80"
     container_name: react-app
+=======
+    image: 558316745366.dkr.ecr.us-east-1.amazonaws.com/dev:latest
+    container_name: react-app
+    ports:
+      - "80:80"
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
     restart: always

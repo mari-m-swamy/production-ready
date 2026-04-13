@@ -3614,7 +3614,11 @@
         "ClearLead": {
           "shape": "HlsClearLead",
           "locationName": "clearLead",
+<<<<<<< HEAD
           "documentation": "Enable Clear Lead DRM to reduce video startup latency by leaving the first segment unencrypted while DRM license retrieval occurs in parallel. This optimization allows immediate playback startup while maintaining content protection for the remainder of the stream. When enabled, the first output segment remains fully unencrypted, and encryption begins at the start of the second segment. The HLS manifest will omit #EXT-X-KEY tags during the clear segment and insert the first #EXT-X-KEY immediately before the first encrypted fragment. This feature is supported exclusively for CMAF HLS (fMP4) outputs and is compatible with all existing key provider integrations (SPEKE v1, SPEKE v2, and Static Key encryption). Supported codecs: H.264 and H.265 video codecs, and AAC audio codec. Choose Enabled to activate Clear Lead DRM optimization. Choose Disabled to use standard encryption where all segments are encrypted from the beginning."
+=======
+          "documentation": "Enable Clear Lead DRM to reduce video startup latency by leaving the first segment unencrypted while DRM license retrieval occurs in parallel. This optimization allows immediate playback startup while maintaining content protection for the remainder of the stream. When enabled, the first output segment remains fully unencrypted, and encryption begins at the start of the second segment. The HLS manifest will omit #EXT-X-KEY tags during the clear segment and insert the first #EXT-X-KEY immediately before the first encrypted fragment. This feature is supported exclusively for CMAF HLS (fMP4) outputs and is compatible with all existing key provider integrations (SPEKE v1, SPEKE v2, and Static Key encryption). Supported codecs: H.264, H.265, and AV1 video codecs, and AAC audio codec. Choose Enabled to activate Clear Lead DRM optimization. Choose Disabled to use standard encryption where all segments are encrypted from the beginning."
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         },
         "ConstantInitializationVector": {
           "shape": "__stringMin32Max32Pattern09aFAF32",
@@ -4445,6 +4449,14 @@
           "locationName": "format",
           "documentation": "The format of your media file. For example: MP4, QuickTime (MOV), Matroska (MKV), WebM, MXF, Wave, AVI, or MPEG-TS. Note that this will be blank if your media file has a format that the MediaConvert Probe operation does not recognize."
         },
+<<<<<<< HEAD
+=======
+        "StartTimecode": {
+          "shape": "__string",
+          "locationName": "startTimecode",
+          "documentation": "The start timecode of the media file, in HH:MM:SS:FF format (or HH:MM:SS;FF for drop frame timecode). Note that this field is null when the container does not include an embedded start timecode."
+        },
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         "Tracks": {
           "shape": "__listOfTrack",
           "locationName": "tracks",
@@ -8044,7 +8056,11 @@
     },
     "HlsClearLead": {
       "type": "string",
+<<<<<<< HEAD
       "documentation": "Enable Clear Lead DRM to reduce video startup latency by leaving the first segment unencrypted while DRM license retrieval occurs in parallel. This optimization allows immediate playback startup while maintaining content protection for the remainder of the stream. When enabled, the first output segment remains fully unencrypted, and encryption begins at the start of the second segment. The HLS manifest will omit #EXT-X-KEY tags during the clear segment and insert the first #EXT-X-KEY immediately before the first encrypted fragment. This feature is supported exclusively for CMAF HLS (fMP4) outputs and is compatible with all existing key provider integrations (SPEKE v1, SPEKE v2, and Static Key encryption). Supported codecs: H.264 and H.265 video codecs, and AAC audio codec. Choose Enabled to activate Clear Lead DRM optimization. Choose Disabled to use standard encryption where all segments are encrypted from the beginning.",
+=======
+      "documentation": "Enable Clear Lead DRM to reduce video startup latency by leaving the first segment unencrypted while DRM license retrieval occurs in parallel. This optimization allows immediate playback startup while maintaining content protection for the remainder of the stream. When enabled, the first output segment remains fully unencrypted, and encryption begins at the start of the second segment. The HLS manifest will omit #EXT-X-KEY tags during the clear segment and insert the first #EXT-X-KEY immediately before the first encrypted fragment. This feature is supported exclusively for CMAF HLS (fMP4) outputs and is compatible with all existing key provider integrations (SPEKE v1, SPEKE v2, and Static Key encryption). Supported codecs: H.264, H.265, and AV1 video codecs, and AAC audio codec. Choose Enabled to activate Clear Lead DRM optimization. Choose Disabled to use standard encryption where all segments are encrypted from the beginning.",
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
       "enum": [
         "ENABLED",
         "DISABLED"
@@ -8702,6 +8718,14 @@
           "locationName": "inputScanType",
           "documentation": "When you have a progressive segmented frame (PsF) input, use this setting to flag the input as PsF. MediaConvert doesn't automatically detect PsF. Therefore, flagging your input as PsF results in better preservation of video quality when you do deinterlacing and frame rate conversion. If you don't specify, the default value is Auto. Auto is the correct setting for all inputs that are not PsF. Don't set this value to PsF when your input is interlaced. Doing so creates horizontal interlacing artifacts."
         },
+<<<<<<< HEAD
+=======
+        "MultiViewSettings": {
+          "shape": "__listOfMultiViewSettings",
+          "locationName": "multiViewSettings",
+          "documentation": "Specify the enhancement layer input video file path for Multi View outputs. The base layer input is treated as the left eye and this Multi View input is treated as the right eye. Only one Multi View input is currently supported. MediaConvert encodes both views into a single MV-HEVC output codec. When you add MultiViewSettings to your job, you can only produce Multi View outputs. Adding any other codec output to the same job is not supported."
+        },
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         "Position": {
           "shape": "Rectangle",
           "locationName": "position",
@@ -8970,6 +8994,14 @@
           "locationName": "inputScanType",
           "documentation": "When you have a progressive segmented frame (PsF) input, use this setting to flag the input as PsF. MediaConvert doesn't automatically detect PsF. Therefore, flagging your input as PsF results in better preservation of video quality when you do deinterlacing and frame rate conversion. If you don't specify, the default value is Auto. Auto is the correct setting for all inputs that are not PsF. Don't set this value to PsF when your input is interlaced. Doing so creates horizontal interlacing artifacts."
         },
+<<<<<<< HEAD
+=======
+        "MultiViewSettings": {
+          "shape": "__listOfMultiViewSettings",
+          "locationName": "multiViewSettings",
+          "documentation": "Specify the enhancement layer input video file path for Multi View outputs. The base layer input is treated as the left eye and this Multi View input is treated as the right eye. Only one Multi View input is currently supported. MediaConvert encodes both views into a single MV-HEVC output codec. When you add MultiViewSettings to your job, you can only produce Multi View outputs. Adding any other codec output to the same job is not supported."
+        },
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         "Position": {
           "shape": "Rectangle",
           "locationName": "position",
@@ -9375,7 +9407,11 @@
         "FollowSource": {
           "shape": "__integerMin1Max150",
           "locationName": "followSource",
+<<<<<<< HEAD
           "documentation": "Specify the input that MediaConvert references for your default output settings. MediaConvert uses this input's Resolution, Frame rate, and Pixel aspect ratio for all outputs that you don't manually specify different output settings for. Enabling this setting will disable \"Follow source\" for all other inputs.  If MediaConvert cannot follow your source, for example if you specify an audio-only input,  MediaConvert uses the first followable input instead. In your JSON job specification, enter an integer from 1 to 150 corresponding  to the order of your inputs."
+=======
+          "documentation": "Specify the input that MediaConvert references for your default output settings.  MediaConvert uses this input's Resolution, Frame rate, and Pixel aspect ratio for all  outputs that you don't manually specify different output settings for. Enabling this setting will disable \"Follow source\" for all other inputs.  If MediaConvert cannot follow your source, for example if you specify an audio-only input,  MediaConvert uses the first followable input instead. In your JSON job specification, enter an integer from 1 to 150 corresponding  to the order of your inputs."
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         },
         "Inputs": {
           "shape": "__listOfInput",
@@ -9546,7 +9582,11 @@
         "FollowSource": {
           "shape": "__integerMin1Max150",
           "locationName": "followSource",
+<<<<<<< HEAD
           "documentation": "Specify the input that MediaConvert references for your default output settings. MediaConvert uses this input's Resolution, Frame rate, and Pixel aspect ratio for all outputs that you don't manually specify different output settings for. Enabling this setting will disable \"Follow source\" for all other inputs.  If MediaConvert cannot follow your source, for example if you specify an audio-only input,  MediaConvert uses the first followable input instead. In your JSON job specification, enter an integer from 1 to 150 corresponding  to the order of your inputs."
+=======
+          "documentation": "Specify the input that MediaConvert references for your default output settings.  MediaConvert uses this input's Resolution, Frame rate, and Pixel aspect ratio for all  outputs that you don't manually specify different output settings for. Enabling this setting will disable \"Follow source\" for all other inputs.  If MediaConvert cannot follow your source, for example if you specify an audio-only input,  MediaConvert uses the first followable input instead. In your JSON job specification, enter an integer from 1 to 150 corresponding  to the order of your inputs."
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         },
         "Inputs": {
           "shape": "__listOfInputTemplate",
@@ -11667,6 +11707,31 @@
         "UTF16"
       ]
     },
+<<<<<<< HEAD
+=======
+    "MultiViewInput": {
+      "type": "structure",
+      "members": {
+        "FileInput": {
+          "shape": "__stringPatternS3Https",
+          "locationName": "fileInput",
+          "documentation": "Specify the input file S3, HTTP, or HTTPS URL for your right eye view video."
+        }
+      },
+      "documentation": "Input settings for MultiView Settings. You can include exactly one input as enhancement layer."
+    },
+    "MultiViewSettings": {
+      "type": "structure",
+      "members": {
+        "Input": {
+          "shape": "MultiViewInput",
+          "locationName": "input",
+          "documentation": "Input settings for MultiView Settings. You can include exactly one input as enhancement layer."
+        }
+      },
+      "documentation": "Specify the enhancement layer input video file path for Multi View outputs. The base layer input is treated as the left eye and this Multi View input is treated as the right eye. Only one Multi View input is currently supported. MediaConvert encodes both views into a single MV-HEVC output codec. When you add MultiViewSettings to your job, you can only produce Multi View outputs. Adding any other codec output to the same job is not supported."
+    },
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
     "MxfAfdSignaling": {
       "type": "string",
       "documentation": "Optional. When you have AFD signaling set up in your output video stream, use this setting to choose whether to also include it in the MXF wrapper. Choose Don't copy to exclude AFD signaling from the MXF wrapper. Choose Copy from video stream to copy the AFD values from the video stream for this output to the MXF wrapper. Regardless of which option you choose, the AFD values remain in the video stream. Related settings: To set up your output to include or exclude AFD values, see AfdSignaling, under VideoDescription. On the console, find AFD signaling under the output's video encoding settings.",
@@ -16196,6 +16261,15 @@
         "shape": "MsSmoothAdditionalManifest"
       }
     },
+<<<<<<< HEAD
+=======
+    "__listOfMultiViewSettings": {
+      "type": "list",
+      "member": {
+        "shape": "MultiViewSettings"
+      }
+    },
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
     "__listOfOutput": {
       "type": "list",
       "member": {

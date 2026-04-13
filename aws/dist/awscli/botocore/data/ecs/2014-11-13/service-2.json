@@ -25,6 +25,10 @@
       "input":{"shape":"CreateCapacityProviderRequest"},
       "output":{"shape":"CreateCapacityProviderResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"LimitExceededException"},
         {"shape":"ServerException"},
         {"shape":"UpdateInProgressException"},
@@ -45,6 +49,10 @@
       "input":{"shape":"CreateClusterRequest"},
       "output":{"shape":"CreateClusterResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"NamespaceNotFoundException"},
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
@@ -122,6 +130,10 @@
       "output":{"shape":"CreateTaskSetResponse"},
       "errors":[
         {"shape":"AccessDeniedException"},
+<<<<<<< HEAD
+=======
+        {"shape":"LimitExceededException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"PlatformUnknownException"},
         {"shape":"NamespaceNotFoundException"},
         {"shape":"ServiceNotActiveException"},
@@ -144,6 +156,10 @@
       "input":{"shape":"DeleteAccountSettingRequest"},
       "output":{"shape":"DeleteAccountSettingResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -159,8 +175,16 @@
       "input":{"shape":"DeleteAttributesRequest"},
       "output":{"shape":"DeleteAttributesResponse"},
       "errors":[
+<<<<<<< HEAD
         {"shape":"TargetNotFoundException"},
         {"shape":"InvalidParameterException"},
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"TargetNotFoundException"},
+        {"shape":"ServerException"},
+        {"shape":"InvalidParameterException"},
+        {"shape":"ClientException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ClusterNotFoundException"}
       ],
       "documentation":"<p>Deletes one or more custom attributes from an Amazon ECS resource.</p>"
@@ -174,7 +198,13 @@
       "input":{"shape":"DeleteCapacityProviderRequest"},
       "output":{"shape":"DeleteCapacityProviderResponse"},
       "errors":[
+<<<<<<< HEAD
         {"shape":"ServerException"},
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"ServerException"},
+        {"shape":"UpdateInProgressException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
         {"shape":"ClusterNotFoundException"},
@@ -193,6 +223,10 @@
       "output":{"shape":"DeleteClusterResponse"},
       "errors":[
         {"shape":"ClusterContainsContainerInstancesException"},
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ClusterContainsServicesException"},
         {"shape":"ClusterContainsCapacityProviderException"},
         {"shape":"ClusterContainsTasksException"},
@@ -271,6 +305,10 @@
       "input":{"shape":"DeleteServiceRequest"},
       "output":{"shape":"DeleteServiceResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -306,6 +344,10 @@
       "output":{"shape":"DeleteTaskSetResponse"},
       "errors":[
         {"shape":"AccessDeniedException"},
+<<<<<<< HEAD
+=======
+        {"shape":"LimitExceededException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServiceNotActiveException"},
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
@@ -327,6 +369,10 @@
       "input":{"shape":"DeregisterContainerInstanceRequest"},
       "output":{"shape":"DeregisterContainerInstanceResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -343,6 +389,10 @@
       "input":{"shape":"DeregisterTaskDefinitionRequest"},
       "output":{"shape":"DeregisterTaskDefinitionResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -358,6 +408,10 @@
       "input":{"shape":"DescribeCapacityProvidersRequest"},
       "output":{"shape":"DescribeCapacityProvidersResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -376,6 +430,10 @@
       "input":{"shape":"DescribeClustersRequest"},
       "output":{"shape":"DescribeClustersResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -392,6 +450,10 @@
       "input":{"shape":"DescribeContainerInstancesRequest"},
       "output":{"shape":"DescribeContainerInstancesResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -544,6 +606,10 @@
       "input":{"shape":"DescribeServicesRequest"},
       "output":{"shape":"DescribeServicesResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -561,6 +627,10 @@
       "input":{"shape":"DescribeTaskDefinitionRequest"},
       "output":{"shape":"DescribeTaskDefinitionResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -598,6 +668,10 @@
       "input":{"shape":"DescribeTasksRequest"},
       "output":{"shape":"DescribeTasksResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -615,7 +689,13 @@
       "input":{"shape":"DiscoverPollEndpointRequest"},
       "output":{"shape":"DiscoverPollEndpointResponse"},
       "errors":[
+<<<<<<< HEAD
         {"shape":"ServerException"},
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"ServerException"},
+        {"shape":"InvalidParameterException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ClientException"}
       ],
       "documentation":"<p><note> <p>This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.</p> </note> <p>Returns an endpoint for the Amazon ECS agent to poll for updates.</p></p>"
@@ -667,6 +747,10 @@
       "input":{"shape":"ListAccountSettingsRequest"},
       "output":{"shape":"ListAccountSettingsResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -683,7 +767,14 @@
       "input":{"shape":"ListAttributesRequest"},
       "output":{"shape":"ListAttributesResponse"},
       "errors":[
+<<<<<<< HEAD
         {"shape":"InvalidParameterException"},
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"ServerException"},
+        {"shape":"InvalidParameterException"},
+        {"shape":"ClientException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ClusterNotFoundException"}
       ],
       "documentation":"<p>Lists the attributes for Amazon ECS resources within a specified target type and cluster. When you specify a target type and cluster, <code>ListAttributes</code> returns a list of attribute objects, one for each attribute on each resource. You can filter the list of results to a single attribute name to only return results that have that name. You can also filter the results by attribute name and value. You can do this, for example, to see which container instances in a cluster are running a Linux AMI (<code>ecs.os-type=linux</code>). </p>",
@@ -698,6 +789,10 @@
       "input":{"shape":"ListClustersRequest"},
       "output":{"shape":"ListClustersResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -714,6 +809,10 @@
       "input":{"shape":"ListContainerInstancesRequest"},
       "output":{"shape":"ListContainerInstancesResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -791,6 +890,10 @@
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
         {"shape":"ServiceNotFoundException"},
+<<<<<<< HEAD
+=======
+        {"shape":"ClusterNotFoundException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"UnsupportedFeatureException"}
       ],
       "documentation":"<p>This operation lists all the service deployments that meet the specified filter criteria.</p> <p>A service deployment happens when you release a software update for the service. You route traffic from the running service revisions to the new service revison and control the number of running tasks. </p> <p>This API returns the values that you use for the request parameters in <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeServiceRevisions.html\">DescribeServiceRevisions</a>.</p>",
@@ -805,6 +908,10 @@
       "input":{"shape":"ListServicesRequest"},
       "output":{"shape":"ListServicesResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -822,6 +929,10 @@
       "input":{"shape":"ListServicesByNamespaceRequest"},
       "output":{"shape":"ListServicesByNamespaceResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"NamespaceNotFoundException"},
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
@@ -839,6 +950,10 @@
       "input":{"shape":"ListTagsForResourceRequest"},
       "output":{"shape":"ListTagsForResourceResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -856,6 +971,10 @@
       "input":{"shape":"ListTaskDefinitionFamiliesRequest"},
       "output":{"shape":"ListTaskDefinitionFamiliesResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -872,6 +991,10 @@
       "input":{"shape":"ListTaskDefinitionsRequest"},
       "output":{"shape":"ListTaskDefinitionsResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -888,6 +1011,10 @@
       "input":{"shape":"ListTasksRequest"},
       "output":{"shape":"ListTasksResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -906,6 +1033,10 @@
       "input":{"shape":"PutAccountSettingRequest"},
       "output":{"shape":"PutAccountSettingResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -921,6 +1052,10 @@
       "input":{"shape":"PutAccountSettingDefaultRequest"},
       "output":{"shape":"PutAccountSettingDefaultResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -936,9 +1071,18 @@
       "input":{"shape":"PutAttributesRequest"},
       "output":{"shape":"PutAttributesResponse"},
       "errors":[
+<<<<<<< HEAD
         {"shape":"TargetNotFoundException"},
         {"shape":"AttributeLimitExceededException"},
         {"shape":"InvalidParameterException"},
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"TargetNotFoundException"},
+        {"shape":"ServerException"},
+        {"shape":"AttributeLimitExceededException"},
+        {"shape":"InvalidParameterException"},
+        {"shape":"ClientException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ClusterNotFoundException"}
       ],
       "documentation":"<p>Create or update an attribute on an Amazon ECS resource. If the attribute doesn't exist, it's created. If the attribute exists, its value is replaced with the specified value. To delete an attribute, use <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeleteAttributes.html\">DeleteAttributes</a>. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html#attributes\">Attributes</a> in the <i>Amazon Elastic Container Service Developer Guide</i>.</p>"
@@ -952,6 +1096,10 @@
       "input":{"shape":"PutClusterCapacityProvidersRequest"},
       "output":{"shape":"PutClusterCapacityProvidersResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"UpdateInProgressException"},
         {"shape":"InvalidParameterException"},
@@ -970,9 +1118,17 @@
       "input":{"shape":"RegisterContainerInstanceRequest"},
       "output":{"shape":"RegisterContainerInstanceResponse"},
       "errors":[
+<<<<<<< HEAD
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"ServerException"},
+        {"shape":"InvalidParameterException"},
+        {"shape":"ClientException"},
+        {"shape":"ClusterNotFoundException"}
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
       ],
       "documentation":"<p><note> <p>This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.</p> </note> <p>Registers an EC2 instance into the specified cluster. This instance becomes available to place containers on.</p></p>"
     },
@@ -1002,6 +1158,11 @@
       "input":{"shape":"RegisterTaskDefinitionRequest"},
       "output":{"shape":"RegisterTaskDefinitionResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"LimitExceededException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"}
@@ -1039,6 +1200,11 @@
       "input":{"shape":"StartTaskRequest"},
       "output":{"shape":"StartTaskResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"NamespaceNotFoundException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -1075,6 +1241,10 @@
       "input":{"shape":"StopTaskRequest"},
       "output":{"shape":"StopTaskResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -1094,7 +1264,12 @@
         {"shape":"AccessDeniedException"},
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
+<<<<<<< HEAD
         {"shape":"ClientException"}
+=======
+        {"shape":"ClientException"},
+        {"shape":"ClusterNotFoundException"}
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
       ],
       "documentation":"<p><note> <p>This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.</p> </note> <p>Sent to acknowledge that an attachment changed states.</p></p>"
     },
@@ -1109,7 +1284,13 @@
       "errors":[
         {"shape":"AccessDeniedException"},
         {"shape":"ServerException"},
+<<<<<<< HEAD
         {"shape":"ClientException"}
+=======
+        {"shape":"InvalidParameterException"},
+        {"shape":"ClientException"},
+        {"shape":"ClusterNotFoundException"}
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
       ],
       "documentation":"<p><note> <p>This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.</p> </note> <p>Sent to acknowledge that a container changed states.</p></p>"
     },
@@ -1125,7 +1306,12 @@
         {"shape":"AccessDeniedException"},
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
+<<<<<<< HEAD
         {"shape":"ClientException"}
+=======
+        {"shape":"ClientException"},
+        {"shape":"ClusterNotFoundException"}
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
       ],
       "documentation":"<p><note> <p>This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.</p> </note> <p>Sent to acknowledge that a task changed states.</p></p>"
     },
@@ -1138,6 +1324,11 @@
       "input":{"shape":"TagResourceRequest"},
       "output":{"shape":"TagResourceResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"LimitExceededException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ResourceNotFoundException"},
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
@@ -1155,6 +1346,10 @@
       "input":{"shape":"UntagResourceRequest"},
       "output":{"shape":"UntagResourceResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ResourceNotFoundException"},
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
@@ -1172,6 +1367,10 @@
       "input":{"shape":"UpdateCapacityProviderRequest"},
       "output":{"shape":"UpdateCapacityProviderResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -1189,6 +1388,10 @@
       "input":{"shape":"UpdateClusterRequest"},
       "output":{"shape":"UpdateClusterResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"NamespaceNotFoundException"},
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
@@ -1206,7 +1409,13 @@
       "input":{"shape":"UpdateClusterSettingsRequest"},
       "output":{"shape":"UpdateClusterSettingsResponse"},
       "errors":[
+<<<<<<< HEAD
         {"shape":"ServerException"},
+=======
+        {"shape":"AccessDeniedException"},
+        {"shape":"ServerException"},
+        {"shape":"UpdateInProgressException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
         {"shape":"ClusterNotFoundException"}
@@ -1222,6 +1431,10 @@
       "input":{"shape":"UpdateContainerAgentRequest"},
       "output":{"shape":"UpdateContainerAgentResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"NoUpdateAvailableException"},
         {"shape":"MissingVersionException"},
         {"shape":"ServerException"},
@@ -1241,6 +1454,10 @@
       "input":{"shape":"UpdateContainerInstancesStateRequest"},
       "output":{"shape":"UpdateContainerInstancesStateResponse"},
       "errors":[
+<<<<<<< HEAD
+=======
+        {"shape":"AccessDeniedException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
         {"shape":"ClientException"},
@@ -1362,6 +1579,10 @@
       "output":{"shape":"UpdateTaskSetResponse"},
       "errors":[
         {"shape":"AccessDeniedException"},
+<<<<<<< HEAD
+=======
+        {"shape":"LimitExceededException"},
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         {"shape":"ServiceNotActiveException"},
         {"shape":"ServerException"},
         {"shape":"InvalidParameterException"},
@@ -3637,7 +3858,14 @@
     "DaemonNotActiveException":{
       "type":"structure",
       "members":{
+<<<<<<< HEAD
         "message":{"shape":"String"}
+=======
+        "message":{
+          "shape":"String",
+          "documentation":"<p> Message that describes the cause of the exception.</p>"
+        }
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
       },
       "documentation":"<p>The specified daemon isn't active. You can't update a daemon that's inactive. If you have previously deleted a daemon, you can re-create it with <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateDaemon.html\">CreateDaemon</a>.</p>",
       "exception":true
@@ -3645,7 +3873,14 @@
     "DaemonNotFoundException":{
       "type":"structure",
       "members":{
+<<<<<<< HEAD
         "message":{"shape":"String"}
+=======
+        "message":{
+          "shape":"String",
+          "documentation":"<p> Message that describes the cause of the exception.</p>"
+        }
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
       },
       "documentation":"<p>The specified daemon wasn't found. You can view your available daemons with <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListDaemons.html\">ListDaemons</a>. Amazon ECS daemons are cluster specific and Region specific.</p>",
       "exception":true
@@ -5161,7 +5396,12 @@
     },
     "EnvironmentVariables":{
       "type":"list",
+<<<<<<< HEAD
       "member":{"shape":"KeyValuePair"}
+=======
+      "member":{"shape":"KeyValuePair"},
+      "sensitive":true
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
     },
     "EphemeralStorage":{
       "type":"structure",
@@ -5698,7 +5938,14 @@
           "documentation":"<p>The Elastic Inference accelerator type to use.</p>"
         }
       },
+<<<<<<< HEAD
       "documentation":"<p>Details on an Elastic Inference accelerator. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-inference.html\">Working with Amazon Elastic Inference on Amazon ECS</a> in the <i>Amazon Elastic Container Service Developer Guide</i>.</p>"
+=======
+      "documentation":"<p>Details on an Elastic Inference accelerator. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-inference.html\">Working with Amazon Elastic Inference on Amazon ECS</a> in the <i>Amazon Elastic Container Service Developer Guide</i>.</p>",
+      "deprecated":true,
+      "deprecatedMessage":"This feature is no longer available.",
+      "deprecatedSince":"2023-04-15"
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
     },
     "InferenceAcceleratorOverride":{
       "type":"structure",
@@ -5712,6 +5959,7 @@
           "documentation":"<p>The Elastic Inference accelerator type to use.</p>"
         }
       },
+<<<<<<< HEAD
       "documentation":"<p>Details on an Elastic Inference accelerator task override. This parameter is used to override the Elastic Inference accelerator specified in the task definition. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-inference.html\">Working with Amazon Elastic Inference on Amazon ECS</a> in the <i>Amazon Elastic Container Service Developer Guide</i>.</p>"
     },
     "InferenceAcceleratorOverrides":{
@@ -5721,6 +5969,26 @@
     "InferenceAccelerators":{
       "type":"list",
       "member":{"shape":"InferenceAccelerator"}
+=======
+      "documentation":"<p>Details on an Elastic Inference accelerator task override. This parameter is used to override the Elastic Inference accelerator specified in the task definition. For more information, see <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-inference.html\">Working with Amazon Elastic Inference on Amazon ECS</a> in the <i>Amazon Elastic Container Service Developer Guide</i>.</p>",
+      "deprecated":true,
+      "deprecatedMessage":"This feature is no longer available.",
+      "deprecatedSince":"2023-04-15"
+    },
+    "InferenceAcceleratorOverrides":{
+      "type":"list",
+      "member":{"shape":"InferenceAcceleratorOverride"},
+      "deprecated":true,
+      "deprecatedMessage":"This feature is no longer available.",
+      "deprecatedSince":"2023-04-15"
+    },
+    "InferenceAccelerators":{
+      "type":"list",
+      "member":{"shape":"InferenceAccelerator"},
+      "deprecated":true,
+      "deprecatedMessage":"This feature is no longer available.",
+      "deprecatedSince":"2023-04-15"
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
     },
     "InfrastructureOptimization":{
       "type":"structure",
@@ -6111,7 +6379,11 @@
         },
         "tmpfs":{
           "shape":"TmpfsList",
+<<<<<<< HEAD
           "documentation":"<p>The container path, mount options, and size (in MiB) of the tmpfs mount. This parameter maps to the <code>--tmpfs</code> option to docker run.</p> <note> <p>If you're using tasks that use the Fargate launch type, the <code>tmpfs</code> parameter isn't supported.</p> </note>"
+=======
+          "documentation":"<p>The container path, mount options, and size (in MiB) of the tmpfs mount. This parameter maps to the <code>--tmpfs</code> option to docker run.</p>"
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         },
         "maxSwap":{
           "shape":"BoxedInteger",
@@ -8064,7 +8336,14 @@
         },
         "inferenceAccelerators":{
           "shape":"InferenceAccelerators",
+<<<<<<< HEAD
           "documentation":"<p>The Elastic Inference accelerators to use for the containers in the task.</p>"
+=======
+          "documentation":"<p>The Elastic Inference accelerators to use for the containers in the task.</p>",
+          "deprecated":true,
+          "deprecatedMessage":"This feature is no longer available.",
+          "deprecatedSince":"2023-04-15"
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         },
         "ephemeralStorage":{
           "shape":"EphemeralStorage",

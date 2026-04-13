@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 ACCOUNT_ID=933367720501
 REGION=us-east-1
 
@@ -19,3 +20,23 @@ docker rm react-app || true
 
 echo "Running container..."
 docker run -d -p 80:80 --name react-app $DEV_REPO:latest
+=======
+ACCOUNT_ID="558316745366"
+REGION="us-east-1"
+
+IMAGE="558316745366.dkr.ecr.us-east-1.amazonaws.com/prod:latest"
+
+# Login
+aws ecr get-login-password --region us-east-1 | \
+docker login --username AWS --password-stdin 558316745366.dkr.ecr.us-east-1.amazonaws.com
+
+# Pull latest
+docker pull $IMAGE
+
+# Stop old container
+docker stop react-app || true
+docker rm react-app || true
+
+# Run new container
+docker run -d -p 80:80 --name react-app $IMAGE
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)

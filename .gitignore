@@ -1,4 +1,7 @@
 node_modules
 build
 .env
+<<<<<<< HEAD
 *.zip
+=======
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)

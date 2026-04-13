@@ -3640,7 +3640,11 @@
       "type":"string",
       "documentation":"<p>API Key Value for service.</p>",
       "min":1,
+<<<<<<< HEAD
       "pattern":"[a-zA-Z0-9+/=._-]+(\\s[a-zA-Z0-9+/=._-]+)?",
+=======
+      "pattern":"[!-~]([ \\t]*[!-~])*",
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
       "sensitive":true
     },
     "MCPServerAuthorizationConfig":{
@@ -3731,6 +3735,25 @@
       "pattern":"[\\S]+",
       "sensitive":true
     },
+<<<<<<< HEAD
+=======
+    "MCPServerConfiguration":{
+      "type":"structure",
+      "required":["tools"],
+      "members":{
+        "tools":{
+          "shape":"MCPToolsList",
+          "documentation":"<p>List of MCP tools can be used with the association.</p>"
+        }
+      },
+      "documentation":"<p>Configuration for Model Context Protocol (MCP) server integration.</p>"
+    },
+    "MCPServerDatadogConfiguration":{
+      "type":"structure",
+      "members":{},
+      "documentation":"<p>Mixin for webhook update support.</p>"
+    },
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
     "MCPServerDetails":{
       "type":"structure",
       "required":[
@@ -3939,6 +3962,14 @@
       "type":"string",
       "pattern":"https://[a-zA-Z0-9.-]+(?::[0-9]+)?(?:/.*)?"
     },
+<<<<<<< HEAD
+=======
+    "MCPServerSplunkConfiguration":{
+      "type":"structure",
+      "members":{},
+      "documentation":"<p>Mixin for webhook update support.</p>"
+    },
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
     "MCPToolsList":{
       "type":"list",
       "member":{"shape":"MCPToolsListMemberString"},
@@ -4845,10 +4876,17 @@
     },
     "ResourceConfigurationArn":{
       "type":"string",
+<<<<<<< HEAD
       "documentation":"<p>Resource Configuration ARN.</p>",
       "max":2048,
       "min":20,
       "pattern":"arn:[a-z0-9\\-]+:vpc-lattice:[a-zA-Z0-9\\-]+:\\d{12}:resourceconfiguration/rcfg-[0-9a-z]{17}"
+=======
+      "documentation":"<p>The ID or ARN of the Resource Configuration.</p>",
+      "max":2048,
+      "min":20,
+      "pattern":"(arn:[a-z0-9\\-]+:vpc-lattice:[a-zA-Z0-9\\-]+:\\d{12}:resourceconfiguration/rcfg-[0-9a-z]{17}|rcfg-[0-9a-z]{17})"
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
     },
     "ResourceGatewayArn":{
       "type":"string",
@@ -4913,7 +4951,11 @@
       "members":{
         "resourceConfigurationId":{
           "shape":"ResourceConfigurationArn",
+<<<<<<< HEAD
           "documentation":"<p>The ARN of the Resource Configuration.</p>"
+=======
+          "documentation":"<p>The ID or ARN of the resource configuration.</p>"
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         },
         "certificate":{
           "shape":"CertificateString",
@@ -5300,10 +5342,28 @@
           "shape":"MCPServerNewRelicConfiguration",
           "documentation":"<p>NewRelic instance integration configuration.</p>"
         },
+<<<<<<< HEAD
+=======
+        "mcpserverdatadog":{
+          "shape":"MCPServerDatadogConfiguration",
+          "documentation":"<p>Datadog MCP server integration configuration.</p>"
+        },
+        "mcpserver":{
+          "shape":"MCPServerConfiguration",
+          "documentation":"<p>MCP (Model Context Protocol) server integration configuration.</p>"
+        },
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         "gitlab":{
           "shape":"GitLabConfiguration",
           "documentation":"<p>GitLab project integration configuration.</p>"
         },
+<<<<<<< HEAD
+=======
+        "mcpserversplunk":{
+          "shape":"MCPServerSplunkConfiguration",
+          "documentation":"<p>Splunk MCP server integration configuration.</p>"
+        },
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
         "eventChannel":{
           "shape":"EventChannelConfiguration",
           "documentation":"<p>Event Channel instance integration configuration.</p>"

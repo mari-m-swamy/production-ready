@@ -1,5 +1,8 @@
 node_modules
 .git
+<<<<<<< HEAD
 .gitignore
+=======
+>>>>>>> ed4127af (Initial dev deployment setup with Docker and CI/CD)
 Dockerfile
 docker-compose.yml
